@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>LollipoP</title>
+<!-- Load FontAwesome icons -->
+<link rel="stylesheet"
+		href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+<!-- Load the custom CSS style file -->
+<link rel="stylesheet" type="text/css" href="0A2.css">
+<link rel="stylesheet" href="A2.css">
+<body>
+	<h1>LOLLI<ion-icon name="pin-outline"></ion-icon>POP</h1>
+	<h6 class="genre" id="genre">ROMEO SANTOS<i><br><ion-icon name="radio"></ion-icon></h6>
+    
+        <div class="home-btn">
+            <a href="https://jjservice.github.io/L2/1.html"><button id="back"><ion-icon name="home-sharp"></ion-icon></button>
+              </a>
+            </div>
+            
+    <div id="sidebar">
+        <div class="toggle-btn" onclick ="show()">
+			<span class="span1"><ion-icon name="menu"></ion-icon></span>
+        </div>
+        <ul>
+          <li><a href="0.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.google.com/"><i class="fab fa-google fa-lg fa-fw"></i></a></li>
+		  <li><a href="https://www.tiktok.com/"><ion-icon name="logo-tiktok" class="logo-tiktok"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a></li>
+          <li><a href="https://x.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a></li>
+		  <li><a href="https://www.facebook.com/"><i class="fab fa-facebook fa-lg fa-fw"></i></a></li>
+		  <li><a href="https://www.playstation.com/en-us/playstation-network/"><i class="fab fa-playstation fa-lg fa-fw"></i></a></li>
+		  <li><a href="https://www.xbox.com/en-us/play?msockid=009f45b6167e61ea281c563c17f460a7"><i class="fab fa-xbox fa-lg fa-fw"></i></a></li>
+		  <li><a href="https://www.amazon.com/?tag=hymsabk-20&ref=pd_sl_7x6o2sg346_e&adgrpid=1331509144712641&hvadid=83219599423132&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=98279&hvtargid=kwd-83219664690356:loc-190&hydadcr=28884_14580403&msclkid=34c58ebf97c0172e9f88e86022a6e300"><i class="fab fa-amazon fa-lg fa-fw"></i></a></li>
+        </ul>
+      </div>
+      <script>
+        function show() {
+          document.getElementById('sidebar').classList.toggle('active');
+        }
+      </script>
+
+<div class="player">
+
+	<!-- Define the section for displaying details -->
+	<div class="details">
+	<div class="now-playing"></div>
+	<div class="track-art"></div>
+	<div class="track-name">.!.PLAY NEXT.!.<br><span><ion-icon name="arrow-down-circle"></ion-icon></span></div>
+	<div class="track-artist"></div>
+	</div>
+
+	<!-- Define the section for displaying track buttons -->
+	<div class="buttons">
+	<div class="prev-track" onclick="prevTrack()">
+		<i class="fa fa-step-backward fa-2x"></i>
+	</div>
+	<div class="playpause-track" onclick="playpauseTrack()">
+		<i class="fa fa-play-circle fa-5x"></i>
+	</div>
+	<div class="next-track" onclick="nextTrack()">
+		<i class="fa fa-step-forward fa-2x"></i>
+	</div>
+	</div>
+
+	<!-- Define the section for displaying the seek slider-->
+	<div class="slider_container">
+	<div class="current-time">00:00</div>
+	<input type="range" min="1" max="100"
+		value="0" class="seek_slider" onchange="seekTo()">
+	<div class="total-duration">00:00</div>
+	</div>
+
+	<!-- Define the section for displaying the volume slider-->
+	<div class="slider_container">
+	<i class="fa fa-volume-down"></i>
+	<input type="range" min="1" max="100"
+		value="99" class="volume_slider" onchange="setVolume()">
+	<i class="fa fa-volume-up"></i>
+	</div>
+</div>  
+   <h6 class="jj2">JJPoweredIT<i><ion-icon name="bonfire" class="icon" id="icon"></ion-icon></i></h6>
+<footer class="footer">
+   <footer class="navbar">
+	<img src="">
+</footer>
+
+<footer class="navbar1">
+	<img src="">
+</footer>
+
+<footer class="navbar2">
+	<img src="">
+</footer>
+</footer>
+
+
+<!-- Load the main script for the player -->
+<script src="A2.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

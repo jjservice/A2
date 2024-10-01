@@ -1,0 +1,50 @@
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    box-shadow: none;
+}
+h1{
+    background-image: none;
+    border-radius: 100%;
+    border: 4px solid gold;
+    box-shadow: 5px 15px 15px darkmagenta;
+    margin-top: 5px;
+}
+h1:hover{
+    background-color: darkmagenta;
+    color: white;
+    text-shadow: 2px 2px 4px gold;
+}
+
+.genre{
+    background-image: url(UtopiaRomeoPic.jpg);
+    background-position: bottom;
+    background-size: 20%;
+   
+}
+.genre ion-icon{
+    font-size: 40px;
+    color: gold;
+    border: 1px solid darkmagenta;
+    border-radius: 50px;
+    background-image: url(DANCINGGIF.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.now-playing {    
+    margin-bottom: 3%;
+    }
+    h1{
+      background-image: url(UtopiaRomeoPic.jpg);
+      background-position: center;
+      background-size: 20%;
+    }
+
+
+
+
+

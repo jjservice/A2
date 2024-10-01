@@ -1,0 +1,1584 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  }
+  footer{
+    bottom: 0;
+    
+  }
+  html{
+    height: 100%;
+     }
+  
+     .jj2{
+      margin-bottom: 5%;
+      }
+   
+  body{
+      min-height: 100%;
+      flex-direction: column;
+      height: 100dvh;
+      position: center;
+      background-color: #151618;
+      background-position: center;
+      align-items: center;
+      text-align: center;
+      border: 20px solid #151618;
+      box-shadow: 2px 2px 4px gold;
+      border-radius: 50px;
+      font-size: 100%;
+      background-image: url(lollipop_4444GIF.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* Smoothly transition the background color */
+      transition: background-color .5s;
+      align-content: center;
+      font-family:'Times New Roman', Times, serif
+      }
+      
+         h1{
+          margin-bottom: 5%;
+          background-image: url(lollipop_4444GIF.gif);
+          background-position: center;
+          background-size: cover;
+          font-weight: bold;
+          font-size: 80px;
+          color: white;
+          text-shadow: 2px 2px 10px gold;
+          border-bottom: 1px solid gold;
+          background-color: transparent;
+          letter-spacing: 2px;
+          box-shadow: 5px 15px 15px darkmagenta;
+          border-radius: 100%;
+          
+         }
+        h1 ion-icon{
+          color: rgb(255, 253, 222);
+          border-bottom: 2px solid gold;
+          box-shadow: 2px 4px 6px darkmagenta;
+          border-radius: 50px;
+          background-image: url(lollipop_3GIF.gif);
+          background-size: cover;
+          background-color: transparent;
+   
+        }
+        h6{
+          font-size: 25px;
+          font-weight: bold;
+          font-family: 'Times New Roman', Times, serif;
+          color: white;
+          text-shadow: 2px 2px 4px gold;
+          transition: background-color .5s;
+         }
+         h6 .icon{
+          color: gold;
+         
+         }
+          h6:hover{
+          background-color: darkmagenta;
+          color: white;
+          text-shadow: 2px 2px 4px gold;
+         }
+         .hits-title{
+          background-image: url(MAGENTAFIREGIF.webp);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          color: white;
+          text-shadow: 3px 3px 2px gold;
+          font-weight: bold;
+          font-size: 40px;
+          box-shadow: 2px 2px 4px gold;
+        }
+        
+         .hits-title2{
+          background-image: url(GUITARGIF1.gif);
+          background-position: center;
+          background-size: cover;
+         }
+         .hits-title ion-icon{
+          font-size: 30px;
+          color: gold;
+          text-shadow: 2px 2px 4px gold;
+          transition: color.5s;
+          box-shadow: 2px 2px 4px gold;
+          border-radius: 100%;
+          background-image: url(lollipop_4444GIF.gif);
+          background-position: center;
+          background-size: cover;
+          padding: 5px;
+          margin: 5px;
+         }
+         .hits-title ion-icon:hover{
+          color: darkmagenta;
+          text-shadow: 2px 2px 4px gold;
+         }
+         .hits-title2 ion-icon{
+          font-size: 25px;
+          color: gold; 
+         }
+         .hits-title2 ion-icon:hover{
+          color: darkmagenta;
+          text-shadow: 2px 2px 4px gold; 
+         }
+         .hits-title2{
+          color: gold;
+          text-shadow: 3px 3px 3px blue;
+          margin-bottom: 5%;
+         }
+  
+      /* Using flex with the column direction to
+      align items in a vertical direction */
+      .player {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: whitesmoke;
+      text-shadow: 2px 2px 4px gold;
+      transition: background-color .5s;
+      
+      }
+      
+      .details {
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      color: black;
+      text-shadow: 2px 2px 4px gold;
+      }
+      
+      .track-art {
+      height: 250px;
+      width: 250px;
+      background-image: URL(
+          "https://source.unsplash.com/Qrspubmx6kE/640x360");
+      background-size: cover;
+      background-position: center;
+      border-radius: 100%;
+      }
+      .track-art{
+          box-shadow: 2px 2px 4px goldenrod;
+          border: 0.8em #171a1d solid;
+          box-shadow: 0.8em 0.8em 1.8em #151618,
+                      -0.8em -0.8em 1em #33353b;
+      }
+      .track-art:hover{
+          box-shadow: 1px 2pc 1px goldenrod;
+          transform: scale(1.05);
+      }
+      
+      /* Changing the font sizes to suitable ones */
+      .now-playing {    
+      font-size: 1.3rem;
+      color: white;
+      }
+      
+      .track-name {
+      font-weight: bold;
+      text-shadow: 2px 5px 4px gold;    
+      font-size: 3.5rem;
+      }
+      
+      .track-artist {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px gold;
+      }
+      
+      /* Using flex with the row direction to
+      align items in a horizontal direction */
+      .buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      }
+      
+      .playpause-track,
+      .prev-track,
+      .next-track {
+      padding: 25px;
+      opacity: 0.8;
+      
+      /* Smoothly transition the opacity */
+      transition: opacity .2s;
+      }
+      
+      /* Change the opacity when mouse is hovered */
+      .playpause-track:hover,
+      .prev-track:hover,
+      .next-track:hover {
+      opacity: 1.0;
+      }
+      
+      /* Define the slider width so that it scales properly */
+      .slider_container {
+      width: 75dvh;
+      max-width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      
+      /* Modify the appearance of the slider */
+      .seek_slider, .volume_slider {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      height: 5px;
+      background: black;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+      }
+      
+      /* Modify the appearance of the slider thumb */
+      .seek_slider::-webkit-slider-thumb,
+      .volume_slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      background: white;
+      cursor: pointer;
+      border-radius: 50%;
+      }
+      
+      /* Change the opacity when mouse is hovered */
+      .seek_slider:hover,
+      .volume_slider:hover {
+      opacity: 1.0;
+      }
+      
+      .seek_slider {
+      width: 60%;
+      }
+      
+      .volume_slider {
+      width: 30%;
+      }
+      
+      .current-time,
+      .total-duration {
+      padding: 10px;
+      }
+      
+      i.fa-volume-down,
+      i.fa-volume-up {
+      padding: 10px;
+      }
+      
+      /* Change the mouse cursor to a pointer
+      when hovered over */
+      i.fa-play-circle,
+      i.fa-pause-circle,
+      i.fa-step-forward,
+      i.fa-step-backward {
+      cursor: pointer;
+      color: black;
+      }
+      .navbar{
+          background-image: url(MADDANCINGPIC.gif);
+          background-position: top;
+          border-radius: 20px;
+          box-shadow:2px 2px 4px gold;
+          border:2px solid #33353b;
+          padding: 2%;
+          bottom: 0%;
+      }
+      .navbar1{
+          background-image: url(BRANDSGIFF1.gif);
+          background-position: center;
+          border-radius: 20px;
+          border:2px solid gold;
+          box-shadow:2px 2px 4px gold;
+          padding: 1%; 
+          bottom: 0%;
+      }
+      .navbar2{
+          background-image: url(MADDANCINGPIC.gif);
+          background-position: center;
+          border-radius: 20px;
+          box-shadow:2px 2px 4px gold;
+          border:2px solid #33353b;
+          padding: 2%;
+          bottom: 0%; 
+      
+      }
+         
+      .navbar3{
+        background-image: url(RedBull-Monster-Brand-Colour-Swap.webp);
+        background-position: center;
+        background-size: 20%;
+        border-radius: 20px;
+        box-shadow:2px 6px 6px darkmagenta;
+        border:2px solid gold;
+        padding: 20px;
+        bottom: 0%;
+       }
+  
+        #sidebar{
+          font-weight: bold;
+          position: absolute;
+          width: 300px;
+          height: 60%;
+          border-radius: 30px;
+          left: -300px;
+          transition: .4s;
+        }
+  
+        #sidebar ul li{
+          color: beige;
+          text-shadow: 2px 2px 4px gold;
+          font-weight: bold;
+          margin: 10px;
+          padding: 10px;
+         
+            
+          
+        }
+        li a{
+          color: rgba(255, 255, 0, 0.616);
+          text-shadow: 6px 6px 10px darkmagenta;
+          transition: color 0.5s ease;
+          background-image: url(lollipop_4444GIF.gif);
+          background-position: center;
+          background-size: cover;
+          font-size: 25px;
+          font-weight: bold;
+          box-shadow: 2px 6px 6px gold;
+          border-radius: 100%;
+          padding: 10px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          border: none; 
+          text-decoration: none;
+        }
+        
+  
+        #sidebar .toggle-btn {
+          position: absolute;
+          left: 330px;
+        }
+        .toggle-btn:hover{
+            color: darkmagenta;
+            text-shadow: 2px 2px 4px gold;
+            box-shadow: 3px 3px 10px darkmagenta;
+            transform: scale(1.10);
+            transition: 0s;
+            border-radius: 20px;
+          }
+        #sidebar.active {
+          left: 0%;
+        }
+        
+        .span1{
+          font-size: 50px;
+          position: relative;
+          color: gold;
+          box-shadow:2px 3px 4px darkmagenta;
+          border: 4px solid goldenrod;
+          border-radius: 20px;
+          background-image: url(lollipop_4444GIF.gif);
+          background-position: center;
+          background-size: cover;
+        }
+        .span1:hover{
+          color: darkmagenta;
+          text-shadow: 2px 2px 4px gold;
+          box-shadow: 3px 3px 10px darkmagenta;
+          transform: scale(1.05);
+          transition: 0s;
+        }
+        h6, .icon{
+          color: white;
+          box-shadow: 2px 2px 4px gold;
+          border-radius: 25px;
+          background-image: url(lollipop_4444GIF.gif);
+          background-size: cover;
+          background-position: center;
+        }
+  
+        .dropdown{
+          align-items: center;
+          align-content: space-between;
+          display: inline-block;
+      }
+      .dropdown.active{
+        right:0%;
+      }
+      .dropdown button{
+          object-position: left;
+          box-shadow: 2px 4px 6px darkmagenta;
+          font-size: 30px;
+          font-weight:bolder;
+          background-image: url(lollipop_4444GIF.gif);
+          background-position: center;
+          background-size: cover;
+          color: gold;
+          padding: 10px 15px;
+          border: 4px solid goldenrod;
+          border-radius: 20px;
+          cursor: pointer;
+          transition: 0s;
+      }
+      .dropdown a{
+          box-shadow: 2px 3px 10px gold;
+          font-size: 20px;
+          text-align: center;
+          width: 175px;
+          height: 10dvh;
+          display: block;
+          color: black;
+          text-decoration: none;
+          padding: 5px 5px;
+          transition: 0s;
+      }
+      .dropdown .content{
+          transition-duration: 0s;
+          display: none;
+          position: absolute;
+          width: 100%;
+          border: 2px solid gold;
+          border-radius: 10px;
+          box-shadow: 4px 4px 10px darkmagenta;
+      }
+      .dropdown:hover .content{
+          display: block;
+      }
+      .dropdown:hover button{
+        color: darkmagenta;
+        text-shadow: 2px 2px 4px gold;
+        box-shadow: 3px 3px 10px darkmagenta;
+        transform: scale(1.10);
+        transition: 0s;
+      }
+      .dropdown a:hover{
+          color: darkmagenta;
+          text-shadow: 3px 3px 10px darkmagenta;
+          transition: 0.5s;
+      }
+      .g-btn:hover{
+          background-color: gold;
+          color: white;
+      }
+      .dropdown a{
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-weight: bold;
+          font-size: 25px;
+          color: gold;
+          text-shadow:2px 2px 6px darkmagenta;
+          border: 2px solid gold;
+          box-shadow: 2px 4px 10px black;
+          background-color: transparent;
+          border-radius: 20px;
+          text-decoration: none;
+          display: block;
+          z-index: 999;
+      }
+      .dropdown li a:hover{
+        color: beige;
+        text-shadow: 3px 2px 10px gold;
+        background-color: transparent;
+      }
+      .li a{
+        background-image: url(ADONISALAPIC.jpg);
+        background-position: top;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li1 a{
+        background-image: url(googlelog.gif);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li2 a{
+        background-image: url(NBC2pic.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        
+      }
+      .li3 a{
+        background-image: url(NETFLIXPIC.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        
+      }
+      .li4 a{
+        background-image: url(PLUTOTVPIC.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        
+      }
+      li i:hover{
+        color: gold;
+        transition: 0.5s;
+        background-color: darkmagenta;
+        border-radius: 100%;
+        box-shadow: 2px 6px 10px gold;
+  
+      }
+      .li a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li1 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li2 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+  
+     .li3 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li4 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .logo-tiktok{
+        font-size: 32px;
+        color: rgba(255, 255, 0, 0.616);
+        box-shadow: 2px 3px 10px gold;
+        border-radius: 50%;
+      }
+      .logo-tiktok:hover{
+        background-color: darkmagenta;
+        color: gold;
+        text-shadow: 2px 2px 10px goldenrod;
+      }
+      .li5 a{
+        background-image: url(itunespic222.gif);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        
+      }
+      .li5 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li6 a{
+        background-image: url(SALSAPIC2.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li6 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li7 a{
+        background-image: url(BACHATAPIC.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li7 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li8 a{
+        background-image: url(REGGAETONPICCC11.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li8 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li9 a{
+        background-image: url(RANCHERASPIC1.jpg);
+        background-position: top;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li9 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li10 a{
+        text-align: center;
+        background-image: url(HIPHOPPIC.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li10 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .home-btn button{
+        color: gold;
+        text-shadow: 2px 2px 10px gold;
+        font-size: 35px;
+        background-image: url(lollipop_4444GIF.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 4px 10px darkmagenta;
+        border-radius: 10px;
+        border: 4px solid goldenrod;
+        padding: 5px;
+        background-color: rgba(139, 0, 139, 0.726);
+        text-shadow: 2px 2px 4px black;
+        transition: background-color 0.3s ease;
+        
+      }
+      
+      .home-btn{
+      margin: 2%;
+      min-height: 5%;
+      background-color: rgba(139, 0, 139, 0.589);
+      border-radius: 100%;
+      background-image: url(MusicGig.gif);
+      background-position: center;
+      background-size: 100px; 
+     
+      }
+      .li11 a{
+        text-align: center;
+        background-image: url(mambopic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li11 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li12 a{
+        text-align: center;
+        background-image: url(DEMBOWPIC.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li12 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li13 a{
+        text-align: center;
+        background-image: url(airbnbpicccc.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li13 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li14 a{
+        font-size: 30px;
+        text-align: center;
+        background-image: url(wheatherpic222.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li14 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+  
+      .content{
+        height: 30%;
+        max-width: 200px;
+        overflow-x: scroll;
+        overflow-block: clip;
+        
+      }
+      .content::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        font-size: 10px;
+      }
+      .content::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px darkmagenta;
+        margin-block: .5em;
+        padding-block: .5em;
+      }
+      .content::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: 2px 6px 10px gold;
+      }
+      .content::-webkit-scrollbar-thumb:hover {
+        background: gold;
+      }
+      .content::-webkit-scrollbar-thumb{
+        transition: background-color 0.5s ease;
+      }
+      .content::-webkit-scrollbar-thumb{
+        background: linear-gradient(darkmagenta,black,blue);
+        border: 1px solid gold;    
+      }
+      header{
+        position: initial;
+        align-items: center;
+        background-color: transparent;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+      }
+      header li{
+        align-items: center;
+        list-style: none;
+        display: inline-block;
+        
+      }
+      header a{
+        color: crimson;
+        text-shadow: 6px 6px 10px darkmagenta;
+        transition: color 0.5s ease;
+        background-image: url(byegif.gif);
+        background-position: center;
+        background-size: cover;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 10px;
+        box-shadow: 2px 6px 6px crimson;
+        border-radius: 100%;
+        padding: 10px;
+        border: 4px solid gold;
+       
+        
+           
+      }
+       header a:hover{
+        color: red;
+        box-shadow: 2px 6px 6px red;
+        border: 4px solid red;
+         
+      }
+     
+      .dropdown a ion-icon{
+        font-size: 30px;
+        align-content: center;
+        color: gold;
+        border-radius: 20px;
+        text-shadow: 2px 2px 4px gold;
+        box-shadow: 2px 2px 4px gold;
+        background-image: url(lollipop_4444GIF.gif);
+        background-position: center;
+        background-size: cover;
+        text-decoration: none;
+      }
+      .dropdown a ion-icon:hover{
+        color: darkmagenta;
+        text-shadow: 2px 2px 4px gold;
+        transition: color 0.5s ease;
+      }
+      .dropdown ion-icon{
+        font-size: 35px;
+      }
+      
+      .navigation{
+        align-content: center;
+        text-align: center;
+        max-width: 100%;
+        border: 1px solid gold;
+        display: flex;
+        overflow-x: scroll;
+        border-radius: 10px;
+        box-shadow: 2px 4px 10px gold;
+        background-image: url(MAGENTAFIREGIF.webp);
+        background-position: center;
+        background-size: cover;
+  
+      }
+      
+      .navigation .item{
+        color: beige;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+      }
+      .navigation::-webkit-scrollbar{
+        width: 0%;
+      }
+      .navigation::-webkit-scrollbar-track {
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px gold;
+        border-bottom: 2px solid black;
+        margin-block: .5em;
+        padding-block: .5em;
+      }
+      .navigation::-webkit-scrollbar::-ms-thumb{
+        background-color: darkmagenta;
+        border-radius: 20px;
+        box-shadow: 2px 2px 4px gold;
+      }
+  
+      .navigation .item:hover{
+        background-color: gold;
+      }
+      .navigation .item:hover ion-icon{
+        color: darkmagenta;
+        text-shadow: 2px 2px 4px gold;
+      }
+      .navigation .item {
+        font-size: 50px;
+      }
+  
+      .navigation::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px gold;
+      }
+      .navigation::-webkit-scrollbar-thumb:hover {
+        background: gold;
+      }
+      .navigation::-webkit-scrollbar-thumb{
+        transition: background-color 0.5s ease;
+      }
+      .navigation::-webkit-scrollbar-thumb{
+        background: linear-gradient(darkmagenta,black,blue);
+        border: 2px solid gold;    
+      }
+      
+      .navigation .team6{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(karolgsiantePIC.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team6:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+  
+      .navigation .mlb{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(BigXTheLargestPic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .mlb:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team1{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image: url(panamiopic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team1:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+  
+      .navigation .nba{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(VITALYPIC.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .nba:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+  
+      .navigation .team8{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(YiyoMeBuscaPic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team8:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team3{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(MEZTIBRAULIOKIKIAPIC.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team3:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+  
+      .navigation .team2{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(badvelitaYoPic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team2:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team9{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(futuretoofastpic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team9:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+  
+      .navigation .team7{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(JoneMayorDimetuPic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team7:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+  
+      }
+     
+      .navigation .team5{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(ShakiraSolteraPic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team5:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      
+      
+      .navigation div ion-icon{
+         padding: 20px;
+         font-weight: bold;
+         font-size: 20px;
+         color: gold;
+         box-shadow: 2px 2px 10px  transparent;
+         border-radius: 10px;
+         
+      }
+      .navigation div ion-icon:hover{
+         background-color: gold;
+         color: darkmagenta;
+         text-shadow: 2px 2px 10px gold;
+         box-shadow: 2px 6px 10px darkmagenta;
+         border-radius: 50px;
+         transform: scale(1.1);
+      }
+  
+      .li27 a{
+        font-size: 30px;
+        text-align: center;
+        background-image: url(videocampicc2222.jpg);
+        background-color:black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li27 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li27 a ion-icon{
+        color: gold;
+        background-image: url(lollipop_4444GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .li28 a{
+        font-size: 30px;
+        text-align: center;
+        background-image: url(americanhiohopPic.jpg);
+        background-color:black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li28 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li28 a ion-icon{
+        color: gold;
+        background-image: url(lollipop_4444GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+  
+      .li29 a{
+        font-size: 30px;
+        text-align: center;
+        background-image: url(lyricsimage.gif);
+        background-color:black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      .li29 a:hover{
+        background-color: gold;
+        color: beige;
+        text-shadow: 2px 2px 10px goldenrod;
+        transition: 1s;
+      }
+      .li29 a ion-icon{
+        color: gold;
+        background-image: url(lollipop_4444GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+  
+      .navigation .team10{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(FlyMetoTheMoonPic.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team10:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team11{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(TransformerPic.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #151515;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team11:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team12{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(1992moviePic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team12:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team13{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(VenonMPic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team13:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team14{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(JokerPic.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team14:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team15{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(RedOneMPIC.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team15:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team16{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(SONI3LOGOPIC.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team16:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team17{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(DespicMoPic.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team17:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team18{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(ImaginaMPic.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team18:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+      .navigation .team19{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(BlackPhonePic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team19:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+  
+      .navigation .team20{
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        background-image:url(DoraSepPic.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 50px;
+      }
+      .navigation .team20:hover{
+        background-image: url(lollipop_3GIF.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #171a1d;
+        color: darkmagenta;
+        text-shadow: 2px 2px 10px gold;
+        box-shadow: 2px 2px 10px darkmagenta;
+      }
+  
+      .hits-title3{
+        background-image: url(ideasinspirationGif.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        text-shadow: 2px 3px 2px gold;
+        font-weight: bold;
+        font-size: 40px;
+        box-shadow: 2px 2px 4px gold;
+      }
+       .hits-title3 ion-icon{
+        font-size: 30px;
+        color: gold;
+        text-shadow: 2px 2px 4px gold;
+        transition: color.5s;
+        box-shadow: 2px 2px 4px gold;
+        border-radius: 100%;
+        background-image: url(lollipop_4444GIF.gif);
+        background-position: center;
+        background-size: cover;
+        padding: 5px;
+        margin: 5px;
+       }
+       .hits-title3 ion-icon:hover{
+        color: darkmagenta;
+        text-shadow: 2px 2px 4px gold;
+       }
+       
+       .player:hover{
+        box-shadow: 2px 6px 10px gold;
+        border-radius: 100%;
+        transform: scale(1.05);
+        background-color: #15161850;
+        transition: box-shadow.5s, transform.5s;
+        cursor: pointer;
+        box-sizing: content-box;
+        align-content: center;
+       }
+  
+  
+      .hits-title4{
+        background-image: url(SPORTSGIF.gif);
+        background-position: center;
+        background-size: 37%;
+        background-color: #151618;
+        color: white;
+        text-shadow: 3px 3px 2px gold;
+        font-weight: bold;
+        font-size: 40px;
+        box-shadow: 2px 2px 4px gold;
+      
+      }
+      
+       .hits-title4 ion-icon{
+        font-size: 30px;
+        color: gold;
+        text-shadow: 2px 2px 4px gold;
+        transition: color.5s;
+        box-shadow: 2px 2px 4px gold;
+        border-radius: 100%;
+        background-image: url(UtopiaRomeoPic.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 5px;
+        margin: 5px;
+       }
+       .hits-title4 ion-icon:hover{
+        color: darkmagenta;
+        text-shadow: 2px 2px 4px gold;
+       }
+       
+       .hits-title5{
+          font-size: 35px;
+          background-image: url(MusicGig.gif);
+          background-position: center;
+          background-size: 25%;
+       }
+       .hits-title5 ion-icon{
+        font-size: 30px;
+        color: gold;
+        text-shadow: 2px 2px 4px gold;
+        transition: color.5s;
+        box-shadow: 2px 2px 4px gold;
+        border-radius: 100%;
+        background-image: url(lollipop_4444GIF.gif);
+        background-position: center;
+        background-size: cover;
+        
+       }
+       .hits-title5 ion-icon:hover{
+        color: darkmagenta;
+        text-shadow: 2px 2px 4px gold;
+       }
