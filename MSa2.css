@@ -163,8 +163,10 @@
    
   }
   #search-input:focus{
-    background-color: rgba(4, 14, 87, 0.322);
-    transition: 0.5s;
+    background-image: url(bonfiregifff.gif);
+    background-position: center;
+    background-size: 65%;
+    transition: 1s;
   
   }
   body.lightPlayer #search-input:focus{
