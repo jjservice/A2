@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="MSa2.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+      .current-song-details{
+    margin: 0% auto;
+    background-image: url(lollipop_3GIF.gif);
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    background-blend-mode: color-burn;
+    transition: 1s;
+  }
+  body.lightPlayer .current-song-details{
+    background-image: none;
+    transition: 1s;
+  }
+  
+    </style>
     <title>LOLLIPOP</title>
 </head>
 <body class="lightPlayer">
@@ -12,7 +29,7 @@
 <div class="music-player">
     <h1 class="lolli-title">LOLLIP<ion-icon name="headset-sharp" onclick="toggleClassPlayer()"></ion-icon>P</h1>
     
-    <input type="text" id="search-input" placeholder=".;.ROMEO SANTOS.;." />
+    <input type="text" id="search-input" placeholder=".;.LOLLITA MUSIC.;." />
     
     <button id="voice-search-button"><i class="fas fa-microphone"></i>
       <audio id="notification-sound" src="notification.mp3" preload="auto"></audio>
@@ -24,13 +41,13 @@
     <option value="fr-FR">French</option>
     <!-- Add more languages as needed -->
     </select>
-
-     <!-- Song Details -->
-     <ul class="current-song-details">
-      <div id="current-id"></div>
-     <div id="current-song-name"></div>
-     <div id="current-artist-name"></div>
-    </ul>
+   
+      <!-- Song Details -->
+      <ul class="current-song-details">
+        <div id="current-id"></div>
+       <div id="current-song-name"></div>
+       <div id="current-artist-name"></div>
+      </ul>  
 
     <div class="song-list" id="song-list"></div>
 
