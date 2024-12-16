@@ -754,6 +754,7 @@
     border: 1px solid lightskyblue;
     transition: 0.5s ease-in-out;
     box-shadow: 0px 2px 8px black;
+    margin-top: -20px;
   }
   body.lightPlayer details p{
     border: 1px solid rgba(153, 205, 50, 0.774);
