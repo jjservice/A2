@@ -16,7 +16,7 @@
   }  
   .music-player {
     margin: 0% auto;
-    max-width: 370px;
+    width: 95%;
     margin: 20px auto;
     background: rgba(0, 0, 0, 0.363);
     border: 6px solid rgba(139, 0, 46, 0.336);
@@ -340,9 +340,12 @@
   }
   
   @media (min-width: 768px) {
+    body{
+        padding: 10px;
+    }
     .music-player {
       margin: 0% auto;
-      min-width: 700px;
+      width: 750px;
       height: auto;
       margin: 20px auto;
       background: rgba(0, 0, 0, 0.363);
