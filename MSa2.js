@@ -102,43 +102,41 @@ const songs = [
   let isMuted = false;
   
   function renderSongs(filteredSongs = songs) {
-      songList.innerHTML = "";
-  
-      filteredSongs.forEach(song => {
-          const songItem = document.createElement("div");
-          songItem.classList.add("song-item");
-          songItem.dataset.songId = song.id;
-          songItem.innerHTML = `
-              <img src="${song.img}" alt="${song.name}">
-              <span>${song.name} - ${song.artist}</span>
-              <button class="play-button"><i class="fas fa-play"></i></button>
-          `;
-  
-          const playButton = songItem.querySelector(".play-button");
-          playButton.addEventListener("click", () => {
-              playOrPauseSong(song, playButton);
-          });
-  
-          songList.appendChild(songItem);
-      });
-  }
-  
-  function playOrPauseSong(song, button) {
-      if (isPlaying && currentSongId === song.id) {
-          audioPlayer.pause();
-          button.querySelector("i").classList.replace("fa-pause", "fa-play");
-          playPauseButton.querySelector("i").classList.replace("fa-pause", "fa-play");
-          isPlaying = false;
-      } else {
-          audioSource.src = song.music;
-          audioSource.dataset.songId = song.id;
-          audioPlayer.load();
-          audioPlayer.play();
-          button.querySelector("i").classList.replace("fa-play", "fa-pause");
-          playPauseButton.querySelector("i").classList.replace("fa-play", "fa-pause");
-          isPlaying = true;
-          currentSongId = song.id;
-      }
+    songList.innerHTML = "";
+
+    filteredSongs.forEach(song => {
+        const songItem = document.createElement("div");
+        songItem.classList.add("song-item");
+        songItem.dataset.songId = song.id;
+        songItem.innerHTML = `
+            <img src="${song.img}" alt="${song.name}">
+            <span>${song.name} - ${song.artist}</span>
+        `;
+
+        const songImage = songItem.querySelector("img"); // Get the image element
+        songImage.addEventListener("click", () => {
+            playOrPauseSong(song);
+        });
+
+        songList.appendChild(songItem);
+    });
+}
+ 
+ function playOrPauseSong(song, img) {
+    // Get the song image element by ID
+    const songImageDisplay = document.getElementById("current-song-image");
+
+    if (isPlaying && currentSongId === song.id) {
+        audioPlayer.pause();
+        isPlaying = false;
+    } else {
+        audioSource.src = song.music;
+        audioSource.dataset.songId = song.id;
+        audioPlayer.load();
+        audioPlayer.play();
+        isPlaying = true;
+        currentSongId = song.id;
+    }
       // Update the current song name display
       const songNameDisplay = document.getElementById("current-song-name");
       songNameDisplay.textContent = song.name;
